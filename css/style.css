@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;400;700&display=swap');
+
+/* configuracion inicial */
+/* crear constantes de diseño*/
+:root {
+    /* colores */
+    --colorencabezado: #a35e87;
+    --colorpiel: #f4f4eb;
+    --colorEnlaceSobre: #7c8419;
+
+
+    /* fuentes */
+    --textos: 'Reboto', sans-serif;
+    --tamtitulos: 2.3rem;
+
+}
+
+/* el simbolo (*), es el selectr universal en css*/
+* {
+    box-sizing: border-box;
+}
+
+
+/* para escribir una clase, que esta en el html, se escribe con punto .home-wrapper */
+
+.home-wrapper {
+    /* imagen fondo */
+    background: url('../imagenes/pexels-toni-cuenca-572487.jpg');
+    background-size: cover;
+
+}
+
+/* selector de encabezado header */
+header {
+    width: 100%;
+    background-color: var(--colorencabezado);
+    position: fixed;
+    /* Espaciado */
+    padding: 10px 0;
+}
+
+/* cambiar el tamaño del logo */
+header img {
+    width: 200px;
+}
+
+/* organizar el menu */
+header nav {
+    float: right;
+    margin-top: 8px;
+}
+
+header nav a {
+    color: var(--colorEnlace);
+    text-decoration: none;
+    margin-left: 5px;
+
+}
+
+/*crear los estilos de la seccion home*/
+
+
+
+/*los id encss se escriben con el simbolo#*/
+#home {
+    /*texto centrado*/
+    text-align: center;
+    /* espaciados superior e inferior*/
+    padding: 250px 0 250px;
+
+}
+
+.container {
+    text-align: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+
+
+/*utilizar el selector de la etiqueta section */
+
+
+/* utilizar el selector dela etiquetq section */
+section {
+    /* espacio superior*/
+    padding-top: 80px;
+
+
+
+}
+
+/* en la seccion de home, aplicar estilos al titulo novedades*/
+
+#home h2 {
+    font-family: var(--textos);
+
+    /* color de fuente */
+    color: #a35e87
+        /*tamaño de fuente*/
+    ;
+    font-size: var(--tamtitulos);
+    /* negrita al titulo  */
+    font-weight: bold;
+
+
+
+
+
+}
+
+/*aplicar estilos al texto en la seccion*/
+#home p {
+
+
+
+    /* <--   crear formulario de contacto-->< */
+    font-family: var(--textos);
+
+    font-size: 2.3rem;
+    color: beige#fff
+}
+
+/*seccion cine */
+#cine .box {
+    display: inline-block;
+    width: 33%;
+    padding: 8px;
+
+
+}
+
+#cine .box img {
+    width: 100%;
+}
+
+#teatro .box img {
+    width: 100%;
+}
+
+#musica .box img {
+    width: 100%;
+
+
+
+}
+
+#teatro .box {
+    display: inline-block;
+    width: 33%;
+    padding: 8px;
+
+
+}
+
+#musica .box {
+    display: inline-block;
+    width: 33%;
+    padding: 8px;
+
+
+}
+
+/* para los titulos en las secciones */
+#teatro,
+#musica,
+#cine h2 {
+    text-align: center !important;
+    font-family: var(--textos);
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    margin-top: 90px;
+
+}
+
+#teatro,
+#musica,
+#cine p {
+    text-align: justify;
+    font-family: var(--textos);
+    font-size: 16px;
+
+
+}
+
+/* contacto */
+#contacto {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+
+}
+
+#contacto input,
+textarea {
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+
+/* pie de pag -footer */
+footer {
+    width: 100%;
+    background-color: var(--colorEnlace);
+    padding: 20px;
+    text-align: center;
+}
+
+
